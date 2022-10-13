@@ -1,0 +1,11 @@
+language: node_js # 设置语言
+
+node_js:
+  - 16 # 指定node.js版本
+
+cache: npm # 开启缓存
+
+install:
+  - npm install
+script:
+  - npm run build
