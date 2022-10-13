@@ -14,10 +14,10 @@ jobs:
             node-version: "16.x"
     # 安装依赖
     - name: install
-      run: npm install
+      run: yarn install
     # 打包
     - name: build project
-      run: npm run build
+      run: yarn run build
     # 使用appleboy/ssh-action@master登录服务器执行拉取镜像脚本
     - name: copy file via ssh 
       uses: appleboy/scp-action@master
